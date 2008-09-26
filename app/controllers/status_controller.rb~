@@ -1,7 +1,7 @@
 class StatusController < ApplicationController
 
   before_filter :authorize, :except => :home
-  layout "status"
+  layout "default"
 
   def list
       @lenie = Engeener.find(:all)
