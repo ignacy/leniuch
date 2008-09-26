@@ -1,28 +1,60 @@
 <htmL>
 
 <head><title> Engeeners list </title> </head>
+<style type="text/css">
+#navlist
+{
+padding-left: 0;
+margin-left: 0;
+border-bottom: 1px solid gray;
+/*width: 200px;*/
+}
+
+#navlist li
+{
+list-style: none;
+margin: 0;
+padding: 0.25em;
+border-top: 1px solid gray;
+}
+
+#navlist li a { text-decoration: none; }
+
+</style>
 
 <body>
+
+<p> <%= link_to "Back to homepage", {:controller => 'status', :action => 'home'} %> </p>
 
 <% if @lenie.blank? %>
 <p>There are not any engeeners currently in the system.</p>
 <% else %>
 <h3>Current status</h3>
-<ul id="lenie">
+<p> Last icon of each line shows current status: </br>
+<img src="/images/icon_unavailable.gif" alt="Busssy"> means that engeener is bussy </br>
+<img src="/images/icon_available.gif" alt="Busssy"> means that he's free
+</p>
+<div id="navcontainer">
+<ul id="navlist">
 <% @lenie.each do |c| %>
-<li>
+<li id="active">
 <%= link_to c.imie, {:action => 'user', :id => c.id} -%>
 
-<%=c.nzwisko %> <b> <%=mail_to c.email, "Send an email"%></b>
+<%=c.nzwisko %>
+
+<%= mail_to c.email, image_tag("/images/mail.gif", :border => 0) %>
+
   <% if c.status %>
-  BUSSY
+  <img src="/images/icon_unavailable.gif" alt="Busssy">
   <% else %>
-  AVAILABLE
+  <img src="/images/icon_available.gif" alt="Free">
   <% end %>
 
 </li>
 <% end %>
 <% end %>
 </ul>
+</div>
+
 </body>
 </html>

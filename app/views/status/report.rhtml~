@@ -1,1 +1,17 @@
 <h1> This is status for: <%= Time.now -%> </h1>
+
+<% @lenie.each do |l| %>
+
+<p> <b> *** <%= l.nzwisko -%> <%= l.imie -%> *** </b></br>
+
+<ul>
+<% @tasks.each do |t| %>
+<% if t.engeener == l.nzwisko %>
+<li> <%= t.tresc -%></li>
+<% end %>
+<% end%>
+
+</ul>
+</p>
+
+<% end %>
