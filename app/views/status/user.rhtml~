@@ -1,0 +1,23 @@
+<html>
+<k1>Hello <%= @len.imie + '  ' + @len.nzwisko %>
+</h1>
+
+<% if @task.blank? %>
+<p>You have no tasks. Get to work ;)</p>
+<% else %>
+<p>These are your current tasks</p>
+<ul id="tasks">
+<% @task.each do |c| %>
+<li><%= c.tresc -%> <b> <%= link_to 'Edit', {:action => "edit", :controller => 'task', :id => c.id} %></b>
+<b> <%= link_to "Delete", {:action => 'delete', :controller => 'task', :id => c.id},
+:confirm => "Are you sure you want to delete this item?" %></b>
+
+
+</li>
+<% end %>
+</ul>
+<% end %>
+<p><%= link_to "Add new Task", {:action => 'new', :controller => 'task', :engeener => @len.nzwisko }%></p>
+
+
+</html>

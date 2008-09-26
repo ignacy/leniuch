@@ -1,0 +1,12 @@
+<h1>Add new task</h1>
+<%= start_form_tag :action => 'create' %>
+<p><label for="task_tresc">Task</label>:
+<%= text_field 'task', 'tresc' %></p>
+<p><label for="task_pdone">Percent done (optional)</label>:
+<%= text_field 'task', 'pdone' %></p>
+<p><label for="task_engeener">Engeener</label>:
+<%= text_field 'task', 'engeener', 'value' =>  params[:engeener]%></p>
+<br/>
+<%= submit_tag "Create" %>
+<%= end_form_tag %>
+

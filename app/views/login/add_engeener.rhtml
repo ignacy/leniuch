@@ -1,0 +1,41 @@
+<html>
+<div class="leniuch-form">
+
+  <%= error_messages_for 'engeener' %>
+
+  <fieldset>
+    <legend>Enter User Details</legend>
+
+    <% form_for :engeener do |form| %>
+      <p>
+        <label for="nzwisko">Surname:</label>
+        <%= form.text_field :nzwisko, :size => 40 %>
+      </p>
+
+       <p>
+        <label for="imie">Name:</label>
+        <%= form.text_field :imie, :size => 40 %>
+      </p>
+
+        <p>
+        <label for="email">Email:</label>
+        <%= form.text_field :email, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="password">Password:</label>
+        <%= form.password_field :password, :size => 40 %>
+      </p>
+
+      <p>
+        <label for="password_confirmation">Confirm:</label>
+        <%= form.password_field :password_confirmation, :size => 40 %>
+      </p>
+
+      <%= submit_tag "Add Engeener", :class => "submit" %>
+
+    <% end %>
+  </fieldset>
+</div>
+
+</html>

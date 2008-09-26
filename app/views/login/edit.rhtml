@@ -1,0 +1,11 @@
+
+<div id="mainContainer">
+<h1>Edit engeener status</h1>
+<%= start_form_tag :controller => 'login', :action => 'update', :id => @engeener %>
+
+<label for="status">Bussy? (checked = no) </label>
+<%= check_box 'engeener', 'status' %></p>
+<%= submit_tag "Save changes" %>
+<%= end_form_tag %>
+</div>
+

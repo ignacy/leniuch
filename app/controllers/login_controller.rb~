@@ -1,0 +1,20 @@
+class LoginController < ApplicationController
+
+  def add_engeener
+  end
+
+  def login
+  end
+
+  def logout
+  end
+
+  def index
+  end
+
+  def delete_engeener
+  end
+
+  def list_engeeners
+  end
+end

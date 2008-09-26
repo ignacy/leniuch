@@ -1,0 +1,28 @@
+<htmL>
+
+<head><title> Engeeners list </title> </head>
+
+<body>
+
+<% if @lenie.blank? %>
+<p>There are not any engeeners currently in the system.</p>
+<% else %>
+<h3>Current status</h3>
+<ul id="lenie">
+<% @lenie.each do |c| %>
+<li>
+<%= link_to c.imie, {:action => 'user', :id => c.id} -%>
+
+<%=c.nzwisko %> <b> <%=mail_to c.email, "Send an email"%></b>
+  <% if c.status %>
+  BUSSY
+  <% else %>
+  AVAILABLE
+  <% end %>
+
+</li>
+<% end %>
+<% end %>
+</ul>
+</body>
+</html>

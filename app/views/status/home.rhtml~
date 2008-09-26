@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Welcome :D </title>
+</head>
+<body>
+<p> <%= link_to "Check current status", {:action => 'list' }%></p>
+<p> <%= link_to "Change my status", {:action => 'user' }%></p>
+
+</body>
+</html>

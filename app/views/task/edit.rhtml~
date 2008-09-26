@@ -1,0 +1,14 @@
+<h1>Edit tasks detail</h1>
+<%= start_form_tag :action => 'update', :id => @task %>
+<p><label for="task_tresc">Task</label>:
+<%= text_field 'task', 'tresc' %></p>
+<p><label for="book_price">Price</label>:
+<%= text_field 'book', 'price' %></p>
+<p><label for="book_subject">Subject</label>:
+<%= collection_select(:book, :subject_id,
+                         @subjects, :id, :name) %></p>
+<p><label for="book_description">Description</label><br/>
+<%= text_area 'book', 'description' %></p>
+<%= submit_tag "Save changes" %>
+<%= end_form_tag %>
+<%= link_to 'Back', {:action => 'list' } %>

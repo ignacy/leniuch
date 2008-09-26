@@ -1,0 +1,10 @@
+class CreateEngeeners < ActiveRecord::Migration
+  def self.up
+    create_table :engeeners do |t|
+    end
+  end
+
+  def self.down
+    drop_table :engeeners
+  end
+end

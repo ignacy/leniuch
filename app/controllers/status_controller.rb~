@@ -1,0 +1,16 @@
+class StatusController < ApplicationController
+  def list
+      @lenie = Engeener.find(:all)
+  end
+
+  def home
+
+  end
+
+  def user
+    @len = Engeener.find(params[:id])
+    nazwisko = @len.nzwisko
+    @task = Task.find(:all, :conditions => [ "engeener = ?", nazwisko])
+  end
+
+end
