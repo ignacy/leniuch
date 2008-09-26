@@ -10585,3 +10585,85 @@ No such file or directory - /tmp/mysql.sock
 /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
 /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
 script/server:3
+  [4;36;1mSQL (0.000211)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.002608)[0m   [0mCREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.033430)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: #42S01Table 'schema_info' already exists: CREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.000595)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateEngeeners (1)
+  [4;35;1mSQL (0.113292)[0m   [0mCREATE TABLE engeeners (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `imie` varchar(255) DEFAULT NULL, `nzwisko` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `status` tinyint(1) DEFAULT 0) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000541)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000845)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateTasks (2)
+  [4;36;1mSQL (0.020767)[0m   [0;1mCREATE TABLE tasks (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tresc` varchar(255) DEFAULT NULL, `pdone` int(11) DEFAULT 0, `engeener` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000516)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000769)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to AddPasswords (3)
+  [4;35;1mSQL (0.010549)[0m   [0mALTER TABLE engeeners ADD `hashed_password` varchar(255)[0m
+  [4;36;1mSQL (0.008579)[0m   [0;1mALTER TABLE engeeners ADD `salt` varchar(255)[0m
+  [4;35;1mSQL (0.000444)[0m   [0mUPDATE schema_info SET version = 3[0m
+  [4;36;1mSQL (0.000513)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to AddSessions (4)
+  [4;35;1mSQL (0.002167)[0m   [0mCREATE TABLE sessions (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) DEFAULT NULL, `data` text DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.005101)[0m   [0;1mCREATE INDEX `index_sessions_on_session_id` ON sessions (`session_id`)[0m
+  [4;35;1mSQL (0.008171)[0m   [0mCREATE INDEX `index_sessions_on_updated_at` ON sessions (`updated_at`)[0m
+  [4;36;1mSQL (0.000343)[0m   [0;1mUPDATE schema_info SET version = 4[0m
+  [4;35;1mSQL (0.000576)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000661)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.025510)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mSQL (0.001666)[0m   [0;1mSHOW KEYS FROM engeeners[0m
+  [4;35;1mSQL (0.001588)[0m   [0mSHOW FIELDS FROM sessions[0m
+  [4;36;1mSQL (0.001833)[0m   [0;1mSHOW KEYS FROM sessions[0m
+  [4;35;1mSQL (0.001600)[0m   [0mSHOW FIELDS FROM tasks[0m
+  [4;36;1mSQL (0.001426)[0m   [0;1mSHOW KEYS FROM tasks[0m
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-09-26 17:18:25) [GET]
+  Session ID: 929d5f5df808ea04deda6aad1f729cf4
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/status
+Rendering status/home
+Completed in 0.02574 (38 reqs/sec) | Rendering: 0.02438 (94%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-09-26 17:49:42) [GET]
+  Session ID: 929d5f5df808ea04deda6aad1f729cf4
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/status
+Rendering status/home
+Completed in 0.00613 (163 reqs/sec) | Rendering: 0.00506 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing StatusController#list (for 127.0.0.1 at 2008-09-26 17:49:44) [GET]
+  Session ID: 929d5f5df808ea04deda6aad1f729cf4
+  Parameters: {"action"=>"list", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002544)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000935)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/login/login
+Completed in 0.04517 (22 reqs/sec) | DB: 0.00348 (7%) | 302 Found [http://localhost/status/list]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-09-26 17:49:44) [GET]
+  Session ID: 929d5f5df808ea04deda6aad1f729cf4
+  Parameters: {"action"=>"login", "controller"=>"login"}
+Rendering  within layouts/lgn
+Rendering login/login
+Completed in 0.03026 (33 reqs/sec) | Rendering: 0.02897 (95%) | DB: 0.00000 (0%) | 200 OK [http://localhost/login/login]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2008-09-26 17:49:52) [POST]
+  Session ID: 929d5f5df808ea04deda6aad1f729cf4
+  Parameters: {"commit"=>"Login", "nzwisko"=>"Moryc", "action"=>"login", "controller"=>"login", "password"=>"haslo"}
+  [4;36;1mEngeener Columns (0.003931)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001174)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`nzwisko` = 'Moryc') LIMIT 1[0m
+Rendering  within layouts/lgn
+Rendering login/login
+Completed in 0.02524 (39 reqs/sec) | Rendering: 0.00505 (20%) | DB: 0.00511 (20%) | 200 OK [http://localhost/login/login]
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-09-26 17:54:19) [GET]
+  Session ID: 929d5f5df808ea04deda6aad1f729cf4
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/default
+Rendering status/home
+Completed in 0.00888 (112 reqs/sec) | Rendering: 0.00577 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]

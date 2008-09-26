@@ -1,4 +1,8 @@
 class StatusController < ApplicationController
+
+  before_filter :authorize, :except => :home
+  layout "status"
+
   def list
       @lenie = Engeener.find(:all)
   end
@@ -7,9 +11,14 @@ class StatusController < ApplicationController
 
   end
 
+  def report
+    @lenie = Engeener.find(:all)
+    @tasks = Task.find(:all)
+  end
+
   def user
-    @len = Engeener.find(params[:id])
-    nazwisko = @len.nzwisko
+    @leniuch = Engeener.find(params[:id])
+    nazwisko = @leniuch.nzwisko
     @task = Task.find(:all, :conditions => [ "engeener = ?", nazwisko])
   end
 
