@@ -11,6 +11,10 @@ class StatusController < ApplicationController
 
   end
 
+  def help
+  
+  end
+
   def report
     @lenie = Engeener.find(:all)
     @tasks = Task.find(:all)

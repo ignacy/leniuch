@@ -39755,3 +39755,2249 @@ ActionController::RoutingError (no route found to match "/images/sidebartop.png"
 
 
 Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-09-27 14:03:17) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/default
+Rendering status/home
+Completed in 0.00467 (214 reqs/sec) | Rendering: 0.00362 (77%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:03:17) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:03:17) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:03:21) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001936)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000951)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001370)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001213)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.001644)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.05616 (17 reqs/sec) | Rendering: 0.00487 (8%) | DB: 0.00711 (12%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:03:21) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:03:21) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:08:11) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002006)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001029)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001296)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.000994)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.001663)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.12765 (7 reqs/sec) | Rendering: 0.00500 (3%) | DB: 0.00699 (5%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:08:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:08:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:08:31) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002498)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001048)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /reports/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:10:40) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001880)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001236)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /reports/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:11:08) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001843)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000921)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /public/reports/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:11:54) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002420)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000835)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - #{RAILS_ROOT}/public/reports/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:12:25) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002060)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000847)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+ArgumentError (wrong number of arguments (2 for 0)):
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `initialize'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `new'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:14:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002474)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000858)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - #{RAILS_ROOT}/public/reports/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:111:in `generate'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:31:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:17:22) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002075)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000813)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - ~/public/reports/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:19:59) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002312)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000872)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - ~/public/reports/dailystatus.csv):
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `initialize'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `new'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:20:30) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002896)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000997)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - ~/dailystatus.csv):
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `initialize'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `new'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:22:10) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002268)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000806)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /public/dailystatus.csv):
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `initialize'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `new'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:23:04) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002211)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000848)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /public/dailystatus.csv):
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `initialize'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `new'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:32:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:23:15) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001827)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000951)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /public/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:33:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:28:37) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002407)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001120)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /public/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:33:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:29:50) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001960)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000811)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+Errno::ENOENT (No such file or directory - /public/dailystatus.csv):
+    /usr/lib/ruby/1.8/csv.rb:326:in `initialize'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open'
+    /usr/lib/ruby/1.8/csv.rb:326:in `open_writer'
+    /usr/lib/ruby/1.8/csv.rb:87:in `open'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:34:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:33:09) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.004563)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000861)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+Rendering  within layouts/default
+
+
+ActionController::MissingTemplate (Missing template /home/ignacy/leniuch/app/views/status/export_toCSV.rhtml):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1211:in `assert_existence_of_template_file'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:810:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:33:45) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002966)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001170)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+Rendering  within layouts/default
+
+
+ActionController::MissingTemplate (Missing template /home/ignacy/leniuch/app/views/status/export_toCSV.rhtml):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1211:in `assert_existence_of_template_file'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:810:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:717:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:50:in `render'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1102:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:35:48) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002742)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000948)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/status/report
+Completed in 0.01909 (52 reqs/sec) | DB: 0.00369 (19%) | 302 Found [http://localhost/status/export_toCSV]
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:35:48) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002674)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000832)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001007)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.000960)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.001893)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.02928 (34 reqs/sec) | Rendering: 0.00560 (19%) | DB: 0.00737 (25%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:35:48) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:35:48) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:37:09) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002146)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001069)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001317)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001013)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.001662)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.03233 (30 reqs/sec) | Rendering: 0.00751 (23%) | DB: 0.00721 (22%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:37:09) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:37:10) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:37:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002018)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000874)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/status/report
+Completed in 0.01795 (55 reqs/sec) | DB: 0.00289 (16%) | 302 Found [http://localhost/status/export_toCSV]
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:37:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001794)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000931)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001111)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001186)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.001891)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.03278 (30 reqs/sec) | Rendering: 0.00693 (21%) | DB: 0.00691 (21%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:37:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:37:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:41:00) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002196)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000944)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and only once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return". Finally, note that to cause a before filter to halt execution of the rest of the filter chain, the filter must return false, explicitly, so "render(...) and return false".):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:979:in `redirect_to'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:993:in `redirect_to'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:44:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:41:16) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.001822)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.002672)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and only once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return". Finally, note that to cause a before filter to halt execution of the rest of the filter chain, the filter must return false, explicitly, so "render(...) and return false".):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:979:in `redirect_to'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:993:in `redirect_to'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:44:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:41:34) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002465)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000854)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+ActionController::MissingFile (Cannot read file /public/reports/dailystatus.csv):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/streaming.rb:59:in `send_file'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:41:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:45:38) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.001833)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000977)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and only once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return". Finally, note that to cause a before filter to halt execution of the rest of the filter chain, the filter must return false, explicitly, so "render(...) and return false".):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:979:in `redirect_to'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:993:in `redirect_to'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:44:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-09-27 14:51:00) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/default
+Rendering status/home
+Completed in 0.00841 (118 reqs/sec) | Rendering: 0.00590 (70%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:51:00) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:51:00) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:51:02) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.001801)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001553)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.000924)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.000952)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.002262)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.03355 (29 reqs/sec) | Rendering: 0.00778 (23%) | DB: 0.00749 (22%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:51:02) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:51:03) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:51:09) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001847)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000830)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+
+
+ActionController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and only once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return". Finally, note that to cause a before filter to halt execution of the rest of the filter chain, the filter must return false, explicitly, so "render(...) and return false".):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:979:in `redirect_to'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:993:in `redirect_to'
+    /home/ignacy/leniuch/app/controllers/status_controller.rb:44:in `export_toCSV'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:1101:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:696:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:688:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/rescue.rb:83:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `send'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:435:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/filters.rb:684:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/session_management.rb:114:in `process'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/base.rb:334:in `process'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:41:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:52:21) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.002510)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001183)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+Completed in 0.01657 (60 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00369 (22%) | 200 OK [http://localhost/status/export_toCSV]
+Streaming file public/reports/dailystatus.csv
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:56:47) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001843)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000906)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.000959)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.001756)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.02996 (33 reqs/sec) | Rendering: 0.00628 (20%) | DB: 0.00646 (21%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:56:47) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:56:47) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:56:49) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002132)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000946)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001089)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001211)[0m   [0;1mSELECT * FROM tasks [0m
+Completed in 0.02546 (39 reqs/sec) | Rendering: 0.00010 (0%) | DB: 0.00538 (21%) | 200 OK [http://localhost/status/export_toCSV]
+Streaming file public/reports/dailystatus.csv
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 14:59:03) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.001895)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000830)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.000931)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001011)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.002280)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.04921 (20 reqs/sec) | Rendering: 0.00813 (16%) | DB: 0.00695 (14%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:59:03) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 14:59:04) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 14:59:05) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001845)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000862)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001658)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.000972)[0m   [0mSELECT * FROM tasks [0m
+  [4;36;1mTask Columns (0.002604)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.03166 (31 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00794 (25%) | 200 OK [http://localhost/status/export_toCSV]
+Streaming file public/reports/dailystatus.csv
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 15:00:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002521)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000986)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001505)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001119)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.001665)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.03699 (27 reqs/sec) | Rendering: 0.00624 (16%) | DB: 0.00780 (21%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 15:00:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 15:00:12) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 15:00:13) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.001804)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000810)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.000994)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001017)[0m   [0mSELECT * FROM tasks [0m
+  [4;36;1mTask Columns (0.001697)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.13525 (7 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00632 (4%) | 200 OK [http://localhost/status/export_toCSV]
+Streaming file public/reports/dailystatus.csv
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2008-09-27 15:02:01) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"export_toCSV", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.002749)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001045)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001237)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.000977)[0m   [0;1mSELECT * FROM tasks [0m
+  [4;35;1mTask Columns (0.001651)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.02788 (35 reqs/sec) | Rendering: 0.00008 (0%) | DB: 0.00766 (27%) | 200 OK [http://localhost/status/export_toCSV]
+Streaming file public/reports/dailystatus.csv
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-09-27 15:03:51) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.010840)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001269)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001028)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.000969)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.001629)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.04352 (22 reqs/sec) | Rendering: 0.00870 (19%) | DB: 0.01574 (36%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 15:03:51) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-27 15:03:51) [GET]
+  Session ID: 5ba82e3b37ec41dc88b7bbedfa11d492
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1325:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/routing.rb:1315:in `recognize'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/dispatcher.rb:40:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:113:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:79:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/webrick_server.rb:63:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/servers/webrick.rb:59
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-1.4.4/lib/active_support/dependencies.rb:495:in `require'
+    /var/lib/gems/1.8/gems/rails-1.2.6/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+
+Rendering /var/lib/gems/1.8/gems/actionpack-1.13.6/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
