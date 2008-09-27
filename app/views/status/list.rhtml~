@@ -38,18 +38,15 @@ border-top: 1px solid gray;
 <ul id="navlist">
 <% @lenie.each do |c| %>
 <li id="active">
-<%= link_to c.imie, {:action => 'user', :id => c.id} -%>
-
-<%=c.nzwisko %>
-
+<h2> <% to = c.imie + " " + c.nzwisko -%> <%= link_to to, {:action => 'user', :id => c.id} -%>
+&nbsp; &nbsp;
 <%= mail_to c.email, image_tag("/images/mail.gif", :border => 0) %>
-
   <% if c.status %>
   <img src="/images/icon_unavailable.gif" alt="Busssy">
   <% else %>
   <img src="/images/icon_available.gif" alt="Free">
   <% end %>
-
+</h2>
 </li>
 <% end %>
 <% end %>

@@ -1,26 +1,6 @@
 <htmL>
 
 <head><title> Engeeners list </title> </head>
-<style type="text/css">
-#navlist
-{
-padding-left: 0;
-margin-left: 0;
-border-bottom: 1px solid gray;
-/*width: 200px;*/
-}
-
-#navlist li
-{
-list-style: none;
-margin: 0;
-padding: 0.25em;
-border-top: 1px solid gray;
-}
-
-#navlist li a { text-decoration: none; }
-
-</style>
 
 <body>
 
@@ -34,24 +14,56 @@ border-top: 1px solid gray;
 <img src="/images/icon_unavailable.gif" alt="Busssy"> means that engeener is bussy </br>
 <img src="/images/icon_available.gif" alt="Busssy"> means that he's free
 </p>
-<div id="navcontainer">
-<ul id="navlist">
+</br></br>
+
+
+<style type="text/css">
+#lista {
+  padding:0;
+  margin:0;
+  width:0
+  }
+#lista li {
+  list-style-type:none;
+  margin:0 0 3em 0;
+  }
+#lista a, #lista a:visited {
+  display:block;
+  width:20em;
+  border:1px solid black;
+  font-family:arial, verdana, sans-serif;
+  font-size:1.2em;
+  text-align:center;
+  text-decoration:none;
+  background:#424242; 
+  color:#eee;
+  padding:0.25em;
+  }
+#lista a:hover {
+  background:gray;
+  color: black;
+  }
+
+
+</style>
+
+
+<ul id="lista">
 <% @lenie.each do |c| %>
-<li id="active">
-<h2> <% to = c.imie + " " + c.nzwisko -%> <%= link_to to, {:action => 'user', :id => c.id} -%>
-&nbsp; &nbsp;
-<%= mail_to c.email, image_tag("/images/mail.gif", :border => 0) %>
+<li>
+<% to = c.imie + " " + c.nzwisko -%> <%= link_to to, {:action => 'user', :id => c.id} -%>
+<%= mail_to c.email, image_tag("/images/mail.gif", :border => 0) -%>
+  <EM> Current status: </EM>
   <% if c.status %>
-  <img src="/images/icon_unavailable.gif" alt="Busssy">
+  <img src="/images/icon_unavailable.gif" border="0" alt="Bussy">
   <% else %>
-  <img src="/images/icon_available.gif" alt="Free">
+  <img src="/images/icon_available.gif" border="0" alt="Free">
   <% end %>
-</h2>
+<% end %>
 </li>
 <% end %>
-<% end %>
 </ul>
-</div>
+
 
 </body>
 </html>
