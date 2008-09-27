@@ -39,4 +39,10 @@
 <p><%= link_to "Add new Task", {:action => 'new', :controller => 'task', :engeener => @leniuch.nzwisko }%></p>
 
 
+<% if @leniuch.id == session[:engeener_id] %>
+<%= link_to "Update my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id]} %>
+
+<% end %>
+
+
 

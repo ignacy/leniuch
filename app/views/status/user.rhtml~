@@ -1,35 +1,40 @@
 
-<style type="text/css">
-#navlist { list-style-image: url(/images/arrow.gif); } 
-</style>
 <h2>Info page for: <%= @leniuch.imie + '  ' + @leniuch.nzwisko %>
 </h2>
+
+<P> <%= link_to 'Back to status page', {:action => 'list', :controller => 'status'} -%></P>
 
 <% if @task.blank? %>
 <p>You have no tasks. Get to work ;)</p>
 <% else %>
 <p>These are your current tasks</p>
-<ul id="navlist">
-<% @task.each do |c| %>
-<li>
-<h3 align="center" color="white" > <%= c.tresc -%> </h3>
-<hr size="1" align="center" color="white">
- <medium>Time taken till now:</medium> <%= c.timetaken -%> hours </br>
- <b><%= link_to 'Edit', {:action => "edit", :controller => 'task', :id => c.id} %></b>
-<b><%= link_to "Delete", {:action => 'delete', :controller => 'task', :id => c.id},
-:confirm => "Are you sure you want to delete this item?" %></b>
-</br>
 
+
+<table border="0">
+<TR> <TD> Task </TD> <TD> Time taken (h) </TD> <TD align="center"> Status</TD><TD align="right" colspan="2"> Actions</TD> </TR>
+
+<% @task.each do |c| %>
+<TR>
+  <TD> <%= c.tresc -%></TD>
+  <TD align ="center"> <%= c.timetaken -%> </TD>
 <!-- If instruction for status of the task -->
-<% if c.pdone == 100 -%>
-<em> DONE </em>
-<% else %>
-<em> PENDING </em>
+  <TD>
+    <% if c.pdone == 100 -%>
+    <small>DONE</small>
+    <% else %>
+    <small>IN PROGRESS</small>
+    <% end %>
+  </TD>
+  <TD align="right">
+    <small> <%= link_to 'Edit', {:action => "edit", :controller => 'task', :id => c.id} %></small>
+  </TD>
+  <TD align="right">
+    <small><%= link_to "Delete", {:action => 'delete', :controller => 'task', :id => c.id},:confirm => "Are you sure you want to delete this item?" %></small>
+  </TD>
+</TR>
 <% end %>
-</br></br>
-</li>
-<% end %>
-</ul>
+</table>
+
 <% end %>
 <p><%= link_to "Add new Task", {:action => 'new', :controller => 'task', :engeener => @leniuch.nzwisko }%></p>
 

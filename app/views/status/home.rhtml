@@ -55,11 +55,14 @@ img {
 <div id="menu4">
   <ul>
     <li><%= link_to "Check current status", {:action => 'list' }%></li>
-    <li> <%= link_to "Add engeener", {:controller => 'login', :action => 'add_engeener'} %></li>
     <li> <%= link_to "Change my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id] }%></li>
     <li> <%= link_to "Show work report", {:controller => 'status', :action => 'report' }%></li>
     <li> <%= link_to "Logout", {:controller => 'login', :action => 'logout'} %></li>	
   </ul>
 </div>
 <br />
+
+
+If you want to add someone to the database you may do it using <b> <%= link_to "this", {:controller => 'login', :action => 'add_engeener'} %> </b> link. You have to be logged in to use this function.
+
 </div>
