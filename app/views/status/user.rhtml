@@ -2,6 +2,8 @@
 <h2>Info page for: <%= @leniuch.imie + '  ' + @leniuch.nzwisko %>
 </h2>
 
+<P> <%= link_to 'Back to status page', {:action => 'list', :controller => 'status'} -%></P>
+
 <% if @task.blank? %>
 <p>You have no tasks. Get to work ;)</p>
 <% else %>
