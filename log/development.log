@@ -56737,3 +56737,28 @@ ActionController::RoutingError (no route found to match "/images/back.png" with 
 
 
 Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.003000)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.006000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mSHOW KEYS FROM engeeners[0m
+  [4;35;1mSQL (0.006000)[0m   [0mSHOW FIELDS FROM sessions[0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mSHOW KEYS FROM sessions[0m
+  [4;35;1mSQL (0.006000)[0m   [0mSHOW FIELDS FROM tasks[0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mSHOW KEYS FROM tasks[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mDROP DATABASE IF EXISTS `leniuch_test`[0m
+  [4;35;1mSQL (0.032000)[0m   [0mCREATE DATABASE `leniuch_test`[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Unknown table 'engeeners': DROP TABLE engeeners[0m
+  [4;36;1mSQL (0.007000)[0m   [0;1mCREATE TABLE engeeners (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `imie` varchar(255) DEFAULT NULL, `nzwisko` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `status` tinyint(1) DEFAULT 0, `hashed_password` varchar(255) DEFAULT NULL, `salt` varchar(255) DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Unknown table 'sessions': DROP TABLE sessions[0m
+  [4;36;1mSQL (0.037000)[0m   [0;1mCREATE TABLE sessions (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) DEFAULT NULL, `data` text DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.016000)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON sessions (`session_id`)[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON sessions (`updated_at`)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Unknown table 'tasks': DROP TABLE tasks[0m
+  [4;36;1mSQL (0.007000)[0m   [0;1mCREATE TABLE tasks (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tresc` varchar(255) DEFAULT NULL, `pdone` int(11) DEFAULT 0, `engeener` varchar(255) DEFAULT NULL, `timetaken` int(8) DEFAULT 0) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.033000)[0m   [0mCREATE TABLE schema_info (version int(11))[0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.005000)[0m   [0mSHOW FIELDS FROM schema_info[0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mUPDATE schema_info SET version = 6[0m

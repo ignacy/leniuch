@@ -16,6 +16,8 @@ class Task < ActiveRecord::Base
   def validate
     errors.add(:pdone, "Should be at least 0%") if pdone < 0
     errors.add(:pdone, "Can't be more then 100%") if pdone > 100
+    errors.add(:timetaken, "Should be at least 0") if timetaken < 0
+    errors.add(:timetaken, "Should be less then 40") if timetaken > 40
   end
 
 end

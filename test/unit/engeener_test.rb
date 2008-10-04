@@ -7,4 +7,11 @@ class EngeenerTest < Test::Unit::TestCase
   def test_truth
     assert true
   end
+
+  def test_invlid_with_emty_attributes
+    engeener = Engeener.new
+    assert !engeener.valid?
+    assert engeener.errors.invalid?(:nzwisko)
+  end
+
 end
