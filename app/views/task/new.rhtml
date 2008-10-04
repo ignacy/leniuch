@@ -6,8 +6,8 @@
 <%= text_field 'task', 'timetaken' %></p>
 <p><label for="task_pdone">Percent done (optional)</label>:
 <%= text_field 'task', 'pdone' %></p>
-<p><label for="task_engeener">Engeener</label>:
-<%= text_field 'task', 'engeener', 'value' =>  params[:engeener]%></p>
+<input type="hidden" id="task_engeener" name="task[engeener]" value="<%=params[:engeener] -%>" />
+
 <br/>
 <%= submit_tag "Create" %>
 <%= end_form_tag %>

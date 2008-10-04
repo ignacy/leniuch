@@ -6,8 +6,7 @@
 <%= text_field 'task', 'timetaken' %></p>
 <p><label for="task_pdone"> Prec. done</label>:
 <%= text_field 'task', 'pdone' %></p>
-<p><label for="task_engeener">Engeener</label><br/>
-<%= text_field 'task', 'engeener' %></p>
+<input type="hidden" id="task_engeener" name="task[engeener]" value="<%=params[:engeener] -%>" />
 <%= submit_tag "Save changes" %>
 <%= end_form_tag %>
 

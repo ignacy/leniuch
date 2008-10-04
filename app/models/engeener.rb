@@ -1,14 +1,21 @@
 require 'digest/sha1'
 
-
+# This is engeener object it describes team members
+# fields:
+# :nzwisko
+# :imie
+# :status
+# :email
+# for details check migration 001
 class Engeener < ActiveRecord::Base
 
-  validates_presence_of :nzwisko
+  validates_presence_of :nzwisko, :imie
   validates_uniqueness_of :nzwisko
 
   attr_accessor :password_confirmation
   validates_confirmation_of :password
 
+  protected
   def validate
     errors.add_to_base("Missing password") if hashed_password.blank?
   end
