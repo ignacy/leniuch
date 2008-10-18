@@ -13,19 +13,43 @@ This is current status. You can see what was every engeener doing till now.
 
 <p>
 
-<h2 align="center"><%= l.nzwisko -%> <%= l.imie -%></h2><hr>
+<h2 align="center"><%= l.nzwisko -%> <%= l.imie -%></h2>
 
+<style type="text/css">
+table.sample {
+        border-width: thin thin thin thin;
+        border-spacing: 0px;
+        border-style: double double double double;
+        border-color: white white white white;
+        border-collapse: collapse;
+}
+table.sample th {
+        border-width: 1px 1px 1px 1px;
+        padding: 1px 1px 1px 1px;
+        border-style: inset inset inset inset;
+        border-color: gray gray gray gray;
+        -moz-border-radius: 0px 0px 0px 0px;
+}
+table.sample td {
+        border-width: 1px 1px 1px 1px;
+        padding: 1px 1px 1px 1px;
+        border-style: inset inset inset inset;
+        border-color: gray gray gray gray;
+        -moz-border-radius: 0px 0px 0px 0px;
+}
+</style>
 
-<TABLE border="0">          
+<TABLE class="sample" border="0">
 
 <TR><TD width="30%">Task description  </TD>
-    <TD>Hours used  </TD>
-    <TD>Percent done  </TD>
+    <TD align="center">Hours used  </TD>
+    <TD align="center">Percent done  </TD>
 <% @tasks.each do |t| %>
+
 <% if t.engeener == l.nzwisko %>
-
-<TR><TD><small><%=t.tresc -%></small></TD><TD align="right"><%= t.timetaken -%> </TD> <TD align="right"><%= t.pdone -%>% </TD>
-
+<% if t.timeadded == Time.now.to_date %>
+<TR><TD><small><%=t.tresc -%></small></TD><TD align="center"><%= t.timetaken -%> </TD> <TD align="right"><%= t.pdone -%>% </TD>
+<% end %>
 <% end %>
 <% end%>
 

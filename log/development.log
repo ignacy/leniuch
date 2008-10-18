@@ -56762,3 +56762,2187 @@ Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/acti
   [4;36;1mSQL (0.002000)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
   [4;35;1mSQL (0.005000)[0m   [0mSHOW FIELDS FROM schema_info[0m
   [4;36;1mSQL (0.002000)[0m   [0;1mUPDATE schema_info SET version = 6[0m
+
+
+Processing StatusController#list (for 127.0.0.1 at 2008-10-18 10:33:48) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"list", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.007000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners [0m
+Rendering  within layouts/default
+Rendering status/list
+Completed in 0.07400 (13 reqs/sec) | Rendering: 0.02200 (29%) | DB: 0.00900 (12%) | 200 OK [http://localhost/status/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:33:50) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:33:50) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-10-18 10:33:52) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/default
+Rendering status/home
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:33:53) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:33:53) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:33:55) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.006000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.002000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.002000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.005000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.08900 (11 reqs/sec) | Rendering: 0.01500 (16%) | DB: 0.01600 (17%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:33:57) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:33:57) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:35:49) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.000000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.004000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.07300 (13 reqs/sec) | Rendering: 0.02200 (30%) | DB: 0.01400 (19%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:35:50) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:35:50) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-10-18 10:35:53) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/default
+Rendering status/home
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00600 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:35:54) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:35:55) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2008-10-18 10:35:56) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"list", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.006000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.003000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.000000)[0m   [0mSELECT * FROM engeeners [0m
+Rendering  within layouts/default
+Rendering status/list
+Completed in 0.04600 (21 reqs/sec) | Rendering: 0.00900 (19%) | DB: 0.00900 (19%) | 200 OK [http://localhost/status/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:35:57) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:35:57) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#user (for 127.0.0.1 at 2008-10-18 10:35:59) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"user", "id"=>"6", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.007000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks WHERE (engeener = 'Moryc') [0m
+Rendering  within layouts/default
+Rendering status/user
+  [4;36;1mTask Columns (0.008000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.07700 (12 reqs/sec) | Rendering: 0.02100 (27%) | DB: 0.01800 (23%) | 200 OK [http://localhost/status/user/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:00) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:00) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2008-10-18 10:36:04) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"list", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.004000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners [0m
+Rendering  within layouts/default
+Rendering status/list
+Completed in 0.04300 (23 reqs/sec) | Rendering: 0.01000 (23%) | DB: 0.00600 (13%) | 200 OK [http://localhost/status/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:05) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:05) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2008-10-18 10:36:11) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"home", "controller"=>"status"}
+Rendering  within layouts/default
+Rendering status/home
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00600 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/status/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:12) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:13) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:36:15) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.003000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.002000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.002000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.17500 (5 reqs/sec) | Rendering: 0.01700 (9%) | DB: 0.02000 (11%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:16) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:16) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:36:37) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.006000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.000000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.005000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.07400 (13 reqs/sec) | Rendering: 0.02200 (29%) | DB: 0.01300 (17%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:39) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:36:39) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:39:47) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.06800 (14 reqs/sec) | Rendering: 0.02000 (29%) | DB: 0.01200 (17%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:39:49) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:39:49) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:40:57) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.005000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.005000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.07100 (14 reqs/sec) | Rendering: 0.02200 (30%) | DB: 0.01300 (18%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:40:59) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:40:59) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:41:21) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.006000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.003000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.007000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.10900 (9 reqs/sec) | Rendering: 0.05800 (53%) | DB: 0.01800 (16%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:41:23) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:41:23) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:41:32) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.007000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.005000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.16100 (6 reqs/sec) | Rendering: 0.02100 (13%) | DB: 0.01500 (9%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:41:35) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:41:35) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:42:00) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.007000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.008000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.07400 (13 reqs/sec) | Rendering: 0.01900 (25%) | DB: 0.01800 (24%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:42:02) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:42:02) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:42:19) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.009000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.000000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.008000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.07600 (13 reqs/sec) | Rendering: 0.02100 (27%) | DB: 0.01900 (25%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:42:21) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:42:22) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:42:47) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.000000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.07000 (14 reqs/sec) | Rendering: 0.02200 (31%) | DB: 0.01100 (15%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:42:49) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:42:50) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:45:12) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.005000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.000000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.001000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.006000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.07300 (13 reqs/sec) | Rendering: 0.02100 (28%) | DB: 0.01300 (17%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:45:15) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:45:15) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:47:05) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;36;1mEngeener Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM engeeners[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners [0m
+  [4;35;1mTask Load (0.001000)[0m   [0mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;36;1mTask Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM tasks[0m
+Completed in 0.07300 (13 reqs/sec) | Rendering: 0.02300 (31%) | DB: 0.01300 (17%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:47:08) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:47:08) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2008-10-18 10:47:40) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {"action"=>"report", "controller"=>"status"}
+  [4;35;1mEngeener Columns (0.005000)[0m   [0mSHOW FIELDS FROM engeeners[0m
+  [4;36;1mEngeener Load (0.001000)[0m   [0;1mSELECT * FROM engeeners WHERE (engeeners.`id` = 6) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.001000)[0m   [0mSELECT * FROM engeeners [0m
+  [4;36;1mTask Load (0.000000)[0m   [0;1mSELECT * FROM tasks [0m
+Rendering  within layouts/default
+Rendering status/report
+  [4;35;1mTask Columns (0.005000)[0m   [0mSHOW FIELDS FROM tasks[0m
+Completed in 0.07400 (13 reqs/sec) | Rendering: 0.02500 (33%) | DB: 0.01200 (16%) | 200 OK [http://localhost/status/report]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:47:42) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/back.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 10:47:42) [GET]
+  Session ID: ed79228112d16612e357b61151a11b49
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/images/sidebartop.png" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1292:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1282:in `recognize'
+    /vendor/rails/railties/lib/dispatcher.rb:40:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:488:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:60
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:495:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+
+Rendering ./script/../config/../vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)

@@ -13,6 +13,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here
 
+
   # Skip frameworks you're not going to use (only works if using vendor/rails)
   # config.frameworks -= [ :action_web_service, :action_mailer ]
 
@@ -42,6 +43,7 @@ Rails::Initializer.run do |config|
   # config.active_record.default_timezone = :utc
 
   # See Rails::Configuration for more options
+
 end
 
 # Add new inflection rules using the following format
