@@ -1,14 +1,16 @@
 
 <div id="mainContainer">
-<h2>Edit engeener status</h2>
-
+<br>
+<h1>Edit engeener status</h1>
+<br>
 This page allows you to change your current status.
-
+<br>
 <%= start_form_tag :controller => 'login', :action => 'update', :id => @engeener %>
 
 <label for="status">Use this checkbox to change your status</label>
+
 <%= check_box 'engeener', 'status' %></p>
-</br>
+<br>
 <%= submit_tag "Save changes" %>
 <%= end_form_tag %>
 </div>

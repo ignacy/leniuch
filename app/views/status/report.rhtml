@@ -1,49 +1,24 @@
-<h2> Status for  <%= Time.now.strftime("%m/%d/%Y %H:%M:%S") -%> </h2>
 
+<h2> Status for  <%= Time.now.strftime("%m/%d/%Y %H:%M:%S") -%> </h2>
+<br>
 <%= link_to "Back to homepage", :action => "home" %></br>
 <%= link_to 'Export this raport to CSV file', :action => 'export_toCSV' %>
-
 
 <p>
 
 This is current status. You can see what was every engeener doing till now.
-</br><small>To export is please click on export link.</small></p>
+</p>
 
 <% @lenie.each do |l| %>
 
 <p>
-
+<br>
 <h2 align="center"><%= l.nzwisko -%> <%= l.imie -%></h2>
+<TABLE border="0">
 
-<style type="text/css">
-table.sample {
-        border-width: thin thin thin thin;
-        border-spacing: 0px;
-        border-style: double double double double;
-        border-color: white white white white;
-        border-collapse: collapse;
-}
-table.sample th {
-        border-width: 1px 1px 1px 1px;
-        padding: 1px 1px 1px 1px;
-        border-style: inset inset inset inset;
-        border-color: gray gray gray gray;
-        -moz-border-radius: 0px 0px 0px 0px;
-}
-table.sample td {
-        border-width: 1px 1px 1px 1px;
-        padding: 1px 1px 1px 1px;
-        border-style: inset inset inset inset;
-        border-color: gray gray gray gray;
-        -moz-border-radius: 0px 0px 0px 0px;
-}
-</style>
-
-<TABLE class="sample" border="0">
-
-<TR><TD width="30%">Task description  </TD>
-    <TD align="center">Hours used  </TD>
-    <TD align="center">Percent done  </TD>
+<TR><TD width="30%">Task description </TD>
+    <TD align="center">Hours used </TD>
+    <TD align="center">Percent done </TD>
 <% @tasks.each do |t| %>
 
 <% if t.engeener == l.nzwisko %>
@@ -51,10 +26,9 @@ table.sample td {
 <TR><TD><small><%=t.tresc -%></small></TD><TD align="center"><%= t.timetaken -%> </TD> <TD align="right"><%= t.pdone -%>% </TD>
 <% end %>
 <% end %>
-<% end%>
+<% end %>
 
-</TABLE>
-
+</TABLE><br>
 </p>
 
 <% end %>

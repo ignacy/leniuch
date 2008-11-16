@@ -1,0 +1,57 @@
+@import url("http://yui.yahooapis.com/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css");
+
+html {
+
+   font-size: 62.5%;
+   font-family: Verdana;
+   background-color: #fff;
+   color: #333;
+   text-decoration: none;
+   word-spacing: -0.05em;
+   text-align: left;
+   letter-spacing: 0;
+   line-height: 1.1em;
+   
+}
+
+p {
+   margin: 10px;
+}
+
+ul {
+   margin: 13px;
+}
+
+ul.path >li:before {
+
+   content: ">> ";
+   font-family: "Times New Roman", serif;
+   font-size: 14px;
+   padding-left: 6px;
+}
+
+h1 {
+    font-family: Georgia;
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+    word-spacing: 0.2em;
+    text-align: left;
+    letter-spacing: -1px;
+    line-height: 1em;
+    font-size: 1.5em;
+    text-transform:uppercase;
+}
+
+h2 {
+    font-family: Arial;
+    background-color: #fff;
+    color: #444;
+    text-decoration: none;
+    word-spacing: 0.2em;
+    text-align: left;
+    letter-spacing: -1px;
+    line-height: 0.9em;
+    font-size: 1.4em;
+}
+

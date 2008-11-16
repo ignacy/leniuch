@@ -6,64 +6,36 @@
 
 <p> <%= link_to "Back to homepage", {:controller => 'status', :action => 'home'} %> </p>
 
+<br>
+
 <% if @lenie.blank? %>
 <p>There are not any engeeners currently in the system.</p>
 <% else %>
-<h3>Current status</h3>
-<p> Last icon of each line shows current status: </br>
+<h1>Current status</h1>
+<br>
+
+<p> You can send an email using an icon next to the name. Last icon of each line shows current status: </br>
 <img src="/images/icon_unavailable.gif" alt="Busssy"> means that engeener is bussy </br>
 <img src="/images/icon_available.gif" alt="Busssy"> means that he's free
 </p>
-</br></br>
+<br><br>
 
 
-<style type="text/css">
-#lista {
-  padding:0;
-  margin:0;
-
-  }
-#lista li {
-  list-style-type:none;
-  margin:0 0 3em 0;
-  }
-#lista a, #lista a:visited {
-  display:block;
-  width:20em;
-  border:1px solid black;
-  font-family:arial, verdana, sans-serif;
-  font-size:1.2em;
-  text-align:center;
-  text-decoration:none;
-  background:#424242; 
-  color:#eee;
-  padding:0.25em;
-  }
-#lista a:hover {
-  background:gray;
-  color: black;
-  }
-
-
-</style>
-
-
-<ul id="lista">
+<table>
 <% @lenie.each do |c| %>
-<li>
-<% to = c.imie + " " + c.nzwisko -%> <%= link_to to, {:action => 'user', :id => c.id} -%>
-<%= mail_to c.email, image_tag("/images/mail.gif", :border => 0) -%>
-  <EM> Current status: </EM>
-  <% if c.status %>
-  <img src="/images/icon_unavailable.gif" border="0" alt="Bussy">
-  <% else %>
-  <img src="/images/icon_available.gif" border="0" alt="Free">
-  <% end %>
+<tr>
+  <td> <% to = c.imie + " " + c.nzwisko -%> <%= link_to to, {:action => 'user', :id => c.id} -%> </td>
+  <td> <%= mail_to c.email, image_tag("/images/mail.gif", :border => 0) -%> </td>
+  <td>
+    <% if c.status %>
+         <img src="/images/icon_unavailable.gif" border="0" alt="Bussy">
+    <% else %>
+         <img src="/images/icon_available.gif" border="0" alt="Free">
+    <% end %>
+  </td>
 <% end %>
-</li>
 <% end %>
-</ul>
-
-
+</tr>
+</table>
 </body>
 </html>

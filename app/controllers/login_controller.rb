@@ -1,7 +1,7 @@
 class LoginController < ApplicationController
 
   before_filter :authorize, :except => [:login, :add_engeener]
-  layout "default"
+  layout "gray"
 
   def add_engeener
     @engeener = Engeener.new(params[:engeener])

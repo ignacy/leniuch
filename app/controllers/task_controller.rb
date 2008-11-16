@@ -1,5 +1,5 @@
 class TaskController < ApplicationController
-    layout "default"
+    layout "gray"
 
   def show
     @task = Task.find(params[:id])

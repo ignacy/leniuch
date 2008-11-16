@@ -1,68 +1,22 @@
-</br>
-<h2>Hello</h2>
+<br>
+
+<h1>Hello</h1>
+<br>
 This is main page of Leniuch. Below you can find currently available actions. If you need help go to help section. You can find a link to it on the right side.
-</br></br>
+<br><br>
 
 <div>
 
-<style type="text/css">
-
-	
-#menu4 {
-	width: 200px;
-	margin: 10px;
-	border-style: solid solid none solid;
-	border-color: #000;
-	border-size: 1px;
-	border-width: 1px;
-	}
-	
-#menu4 li a {
-	height: 32px;
-  	voice-family: "\"}\""; 
-  	voice-family: inherit;
-  	height: 24px;
-	text-decoration: none;
-	}	
-	
-#menu4 li a:link, #menu4 li a:visited {
-	color: #CCC;
-	display: block;
-	background:  url(/images/menu4.gif);
-	padding: 8px 0 0 10px;
-	}
-	
-#menu4 li a:hover {
-	color: #FFF;
-	background:  url(/images/menu4.gif) 0 -32px;
-	padding: 8px 0 0 10px;
-	}	
-	
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	}
-
-img {
-    border: none;
-} 
-
-
-</style>
-
 <h2>Your options:</h2>
-<div id="menu4">
-  <ul>
+<div>
+  <ul class="path">
     <li><%= link_to "Check current status", {:action => 'list' }%></li>
     <li> <%= link_to "Change my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id] }%></li>
     <li> <%= link_to "Show work report", {:controller => 'status', :action => 'report' }%></li>
-    <li> <%= link_to "Logout", {:controller => 'login', :action => 'logout'} %></li>	
+    <li> <%= link_to "Logout", {:controller => 'login', :action => 'logout'} %></li>
   </ul>
 </div>
-<br />
-
-
+<br>
 If you want to add someone to the database you may do it using <b> <%= link_to "this", {:controller => 'login', :action => 'add_engeener'} %> </b> link. You have to be logged in to use this function.
 
 </div>
