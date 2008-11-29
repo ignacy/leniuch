@@ -40,7 +40,7 @@ class LoginController < ApplicationController
   def update
     @engeener = Engeener.find(params[:id])
     if @engeener.update_attributes(params[:engeener])
-      redirect_to :action => 'user', :controller => 'status', :id => @engeener
+      redirect_to :action => 'list', :controller => 'status', :id => @engeener
     else
       render :action => 'edit'
     end

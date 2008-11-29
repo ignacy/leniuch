@@ -1,9 +1,12 @@
 
 <h2> Status for  <%= Time.now.strftime("%m/%d/%Y %H:%M:%S") -%> </h2>
-<br>
-<%= link_to "Back to homepage", :action => "home" %></br>
-<%= link_to 'Export this raport to CSV file', :action => 'export_toCSV' %>
 
+<table id="hor-zebra">
+  <tr>
+    <th class="odd"> <%= link_to "Back to homepage", :action => "home" %></th>
+    <th class="odd"> <%= link_to 'Export this raport to CSV file', :action => 'export_toCSV' %></th>
+  </tr>
+</table>
 <p>
 
 This is current status. You can see what was every engeener doing till now.
@@ -14,21 +17,26 @@ This is current status. You can see what was every engeener doing till now.
 <p>
 <br>
 <h2 align="center"><%= l.nzwisko -%> <%= l.imie -%></h2>
-<TABLE border="0">
 
-<TR><TD width="30%">Task description </TD>
-    <TD align="center">Hours used </TD>
-    <TD align="center">Percent done </TD>
+<TABLE id="box-table-a">
+
+<TR><Th>Task description </Th>
+    <Th align="center">Hours used </Th>
+    <Th align="center">Percent done </Th>
 <% @tasks.each do |t| %>
 
 <% if t.engeener == l.nzwisko %>
 <% if t.timeadded == Time.now.to_date %>
-<TR><TD><small><%=t.tresc -%></small></TD><TD align="center"><%= t.timetaken -%> </TD> <TD align="right"><%= t.pdone -%>% </TD>
+<TR><TD><small><%=t.tresc -%></small></TD><TD align="center"><%= t.timetaken -%> </TD>
+<TD><div class="prog-border">
+<div class="prog-bar" style="width: <%= t.pdone -%>%;"><%= t.pdone -%>%
+</div>
+</div></TD>
 <% end %>
 <% end %>
 <% end %>
 
-</TABLE><br>
+</TABLE>
 </p>
 
 <% end %>

@@ -1,22 +1,28 @@
 <br>
 
-<h1>Hello</h1>
+<h1>Welcome!</h1>
 <br>
-This is main page of Leniuch. Below you can find currently available actions. If you need help go to help section. You can find a link to it on the right side.
+This is the main page of <em>Leniuch </em>
+Below you can find links to common functionlity.
 <br><br>
 
 <div>
 
 <h2>Your options:</h2>
-<div>
-  <ul class="path">
-    <li><%= link_to "Check current status", {:action => 'list' }%></li>
-    <li> <%= link_to "Change my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id] }%></li>
-    <li> <%= link_to "Show work report", {:controller => 'status', :action => 'report' }%></li>
-    <li> <%= link_to "Logout", {:controller => 'login', :action => 'logout'} %></li>
-  </ul>
+
+<table id="hor-zebra">
+  <tr class="odd">
+    <th> Description </th></tr>
+  <tr>
+    <td><%= link_to "Check current status", {:action => 'list' }%></td>
+    </tr>
+<tr class="odd">
+    <td><%= link_to "Change my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id] }%></td></tr>
+<tr>    <td><%= link_to "Show work report", {:controller => 'status', :action => 'report' }%></td></tr>
+<tr class="odd">    <td> <%= link_to "Logout", {:controller => 'login', :action => 'logout'} %></td></tr>
+
+</table>
 </div>
 <br>
 If you want to add someone to the database you may do it using <b> <%= link_to "this", {:controller => 'login', :action => 'add_engeener'} %> </b> link. You have to be logged in to use this function.
 
-</div>

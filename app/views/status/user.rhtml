@@ -1,48 +1,70 @@
 <br>
 <h2>Info page for: <%= @leniuch.imie + '  ' + @leniuch.nzwisko %>
 </h2>
-<br>
-<p> <%= link_to 'Back to status page', {:action => 'list', :controller => 'status'} -%></p>
-<br>
+
 <% if @task.blank? %>
 <p>You have no tasks. Get to work ;)</p>
 <% else %>
-<p>These are your current tasks</p>
+<p>These are your current tasks. This table shows only tasks from today.</p>
 
 
-<table border="0">
-<TR> <TD> Task </TD> <TD> Time taken (h) </TD> <TD align="center"> Status</TD><TD align="right" colspan="2"> Actions</TD> </TR>
+<table id="one-column-emphasis">
+
+<TR>
+  <Th class="oce-first"> Task </Th>
+  <Th> Time(h) </Th>
+  <Th align="center"> Status</Th>
+<% if @leniuch.id == session[:engeener_id] %>
+  <Th align="right" colspan="2"> Actions</Th>
+<% end %>
+</TR>
 
 <% @task.each do |c| %>
+<% if c.timeadded == Time.now.to_date %>
 <TR>
-  <TD> <%= c.tresc -%></TD>
+  <TD class="oce-first"> <%= c.tresc -%></TD>
   <TD align ="center"> <%= c.timetaken -%> </TD>
 <!-- If instruction for status of the task -->
   <TD>
     <% if c.pdone == 100 -%>
-    <small>DONE</small>
+    DONE
     <% else %>
-    <small>IN PROGRESS</small>
+    IN PROGRESS
     <% end %>
   </TD>
+
+<% if @leniuch.id == session[:engeener_id] %>
+
   <TD align="right">
     <small> <%= link_to 'Edit', {:action => "edit", :controller => 'task', :id => c.id} %></small>
   </TD>
   <TD align="right">
     <small><%= link_to "Delete", {:action => 'delete', :controller => 'task', :id => c.id},:confirm => "Are you sure you want to delete this item?" %></small>
   </TD>
+
+<% end %>
+
 </TR>
+<% end %>
 <% end %>
 </table>
 
 <% end %>
-<p><%= link_to "Add new Task", {:action => 'new', :controller => 'task', :engeener => @leniuch.nzwisko }%></p>
 
+
+
+
+<table id="hor-zebra">
+<tr>
+<th class="odd"><%= link_to "Back to homepage", {:controller => 'status', :action => 'home'} %></th>
+<th class="odd"> <%= link_to 'Back to status page', {:action => 'list', :controller => 'status'} -%></th>
+<th class="odd"><%= link_to "Add new Task", {:action => 'new', :controller => 'task', :engeener => @leniuch.nzwisko }%></th>
 
 <% if @leniuch.id == session[:engeener_id] %>
-<%= link_to "Update my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id]} %>
+<th class="odd"><%= link_to "Update my status", {:controller => 'login', :action => 'edit', :id => session[:engeener_id]} %></td>
 
 <% end %>
-
+</tr>
+</table>
 
 

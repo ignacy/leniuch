@@ -1,12 +1,7 @@
-<htmL>
 
 <head><title> Engeeners list </title> </head>
 
 <body>
-
-<p> <%= link_to "Back to homepage", {:controller => 'status', :action => 'home'} %> </p>
-
-<br>
 
 <% if @lenie.blank? %>
 <p>There are not any engeeners currently in the system.</p>
@@ -18,10 +13,18 @@
 <img src="/images/icon_unavailable.gif" alt="Busssy"> means that engeener is bussy </br>
 <img src="/images/icon_available.gif" alt="Busssy"> means that he's free
 </p>
-<br><br>
 
 
-<table>
+
+<table id="box-table-a" summary="status">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">email</th>
+      <th scope="col">status</th>
+    </tr>
+  </thead>
+
 <% @lenie.each do |c| %>
 <tr>
   <td> <% to = c.imie + " " + c.nzwisko -%> <%= link_to to, {:action => 'user', :id => c.id} -%> </td>
@@ -38,4 +41,13 @@
 </tr>
 </table>
 </body>
-</html>
+
+<table id="hor-zebra">
+<tr>
+<th class="odd"><%= link_to "Back to homepage", {:controller => 'status', :action => 'home'} %></th>
+<th class="odd"><%= link_to "Show work report", {:controller => 'status', :action => 'report' }%></th>
+</tr>
+</table>
+
+
+

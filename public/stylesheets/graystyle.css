@@ -11,7 +11,117 @@ html {
    text-align: left;
    letter-spacing: 0;
    line-height: 1.1em;
-   
+
+}
+
+#box-table-a
+{
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        margin: 45px;
+        width: 480px;
+        text-align: left;
+        border-collapse: collapse;
+}
+#box-table-a th
+{
+        font-size: 13px;
+        font-weight: normal;
+        padding: 8px;
+        background: #b9c9fe;
+        border-top: 4px solid #aabcfe;
+        border-bottom: 1px solid #fff;
+        color: #039;
+}
+#box-table-a td
+{
+        padding: 8px;
+        background: #e8edff;
+        border-bottom: 1px solid #fff;
+        color: #669;
+        border-top: 1px solid transparent;
+}
+#box-table-a tr:hover td
+{
+    background: #d0dafd;
+    color: #333;
+}
+
+#one-column-emphasis
+{
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        margin: 45px;
+        width: 480px;
+        text-align: left;
+        border-collapse: collapse;
+}
+#one-column-emphasis th
+{
+        font-size: 14px;
+        font-weight: normal;
+        padding: 12px 15px;
+        color: #039;
+}
+#one-column-emphasis td
+{
+        padding: 10px 15px;
+        color: #669;
+        border-top: 1px solid #e8edff;
+}
+.oce-first
+{
+        background: #d0dafd;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+}
+
+#one-column-emphasis tr:hover td
+{
+        color: #339;
+        background: #eff2ff;
+}
+
+
+#hor-zebra
+{
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 12px;
+        margin: 10px;
+        width: 480px;
+        text-align: left;
+        border-collapse: collapse;
+}
+#hor-zebra th
+{
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px 8px;
+        color: #039;
+}
+#hor-zebra td
+{
+        padding: 8px;
+        color: #669;
+}
+#hor-zebra .odd
+{
+        background: #e8edff;
+}
+
+
+
+h3 {
+    font-family: Calibri;
+    background-color: #333;
+    color: #eee;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 8px;
+    line-height: 1.2em;
+    font-size: 4em;
+    font-variant: small-caps;
 }
 
 p {
@@ -55,3 +165,22 @@ h2 {
     font-size: 1.4em;
 }
 
+.prog-border {
+width: 200px;
+height: 20px;
+background: #FFF;
+padding: 3px;
+border: 1px solid #DDD;
+}
+.prog-bar {
+height: 20px;
+background: url(/images/progress_blue.gif) repeat-x; /* use the color or the background you want! */
+}
+
+form {
+ background-color: #e8edff;
+ color: #222;
+ border: 1px solid #999999;
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 1em;
+}

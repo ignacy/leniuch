@@ -2,7 +2,7 @@
 # migrations feature of ActiveRecord to incrementally modify your database, and
 # then regenerate this schema definition.
 
-ActiveRecord::Schema.define(:version => 6) do
+ActiveRecord::Schema.define(:version => 7) do
 
   create_table "engeeners", :force => true do |t|
     t.column "imie",            :string
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(:version => 6) do
     t.column "pdone",     :integer,              :default => 0
     t.column "engeener",  :string
     t.column "timetaken", :integer, :limit => 8, :default => 0
+    t.column "timeadded", :date,                 :default => '2008-10-18'
   end
 
 end
