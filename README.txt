@@ -1,0 +1,9 @@
+Leniuch
+
+This is Leniuch a rails app designed to manage a team of engeeners.
+
+Main features:
+
+- checking team members status (free/busy)
+- adding task (task description, time taken, percent done)
+- exporting team reports to CSV file (who was doing what and for how long)
