@@ -16,10 +16,12 @@ class Engeener < ActiveRecord::Base
   validates_confirmation_of :password
 
   protected
+  # Validaation helper
   def validate
     errors.add_to_base("Missing password") if hashed_password.blank?
   end
 
+  # Login. Usues application controller functionality
   def self.authenticte(nzwisko, password)
     engeener = self.find_by_nzwisko(nzwisko)
     if engeener
@@ -31,10 +33,12 @@ class Engeener < ActiveRecord::Base
     engeener
   end
 
+  # TODO: May I use attr, here??
   def password
     @password
   end
 
+  # Setter
   def password=(pwd)
     @password = pwd
     return if pwd.blank?
@@ -43,12 +47,13 @@ class Engeener < ActiveRecord::Base
   end
 
   private
-
+  #Hashes password
   def self.encrypted_password(password, salt)
     string_to_hash = password + "wibble" + salt  # 'wibble' makes it harder to guess
     Digest::SHA1.hexdigest(string_to_hash)
   end
 
+  #Creates new salt for hashing
   def create_new_salt
     self.salt = self.object_id.to_s + rand.to_s
   end

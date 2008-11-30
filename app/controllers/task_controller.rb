@@ -1,14 +1,17 @@
 class TaskController < ApplicationController
     layout "gray"
 
+  # Show task details
   def show
     @task = Task.find(params[:id])
   end
 
+  # Add new task TODO: dupplicates create
   def new
     @task = Task.new
   end
 
+  # Create new task
   def create
     @task = Task.new(params[:task])
     nazwisko = @task.engeener
@@ -21,10 +24,12 @@ class TaskController < ApplicationController
     end
   end
 
+  # Edit task
   def edit
     @task = Task.find(params[:id])
   end
 
+  # Update task
   def update
     @task = Task.find(params[:id])
     if @task.update_attributes(params[:task])
@@ -34,6 +39,7 @@ class TaskController < ApplicationController
     end
   end
 
+  # Delete task
   def delete
     Task.find(params[:id]).destroy
     redirect_to :action => 'list', :controller => 'status'

@@ -5,6 +5,7 @@ class StatusController < ApplicationController
   before_filter :authorize, :except => :home
   layout "gray"
 
+  # Returns all engeeners
   def list
       @lenie = Engeener.find(:all)
   end
@@ -17,17 +18,20 @@ class StatusController < ApplicationController
 
   end
 
+  # Returns all engeeneres and tasks
   def report
     @lenie = Engeener.find(:all)
     @tasks = Task.find(:all)
   end
 
+  # User info page. All tasks.
   def user
     @leniuch = Engeener.find(params[:id])
     nazwisko = @leniuch.nzwisko
     @task = Task.find(:all, :conditions => [ "engeener = ?", nazwisko])
   end
 
+  # Exports daily report to CSV file
   def export_toCSV
 
     #get all engeeners and tasks from db
