@@ -1,5 +1,5 @@
 <h1>Edit tasks detail</h1>
-<%= start_form_tag :action => 'update', :id => @task %>
+<% form_tag :action => 'update', :id => @task do -%>
 <p><label for="task_tresc">Task</label>:
 <%= text_field 'task', 'tresc' %></p>
 <p><label for="task_timetaken">Time taken</label>:
@@ -8,5 +8,5 @@
 <%= text_field 'task', 'pdone' %></p>
 <input type="hidden" id="task_engeener" name="task[engeener]" value="<%=params[:engeener] -%>" />
 <%= submit_tag "Save changes" %>
-<%= end_form_tag %>
+<% end -%>
 

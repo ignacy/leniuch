@@ -1,10 +1,17 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
+  # Pick a unique cookie name to distinguish our session data from others'
+  session :session_key => '_leniuch_session_id'
 
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
+  private
+
+  # Authorize user
+  def authorize
+    unless Engeener.find_by_id(session[:engeener_id])
+      session[:original_uri] = request.request_uri
+      flash[:notice] = "Please log in"
+      redirect_to(:controller => "login", :action => "login")
+    end
+  end
+
 end

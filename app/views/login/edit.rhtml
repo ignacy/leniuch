@@ -5,13 +5,11 @@
 <br>
 This page allows you to change your current status.
 <br>
-<%= start_form_tag :controller => 'login', :action => 'update', :id => @engeener %>
+<% form_tag :controller => 'login', :action => 'update', :id => @engeener do -%>
 
-<label for="status">Use this checkbox to change your status &nbsp;</label>
-
-<%= check_box 'engeener', 'status' %></p>
-<br>
-<%= submit_tag "Save changes" %>
-<%= end_form_tag %>
+  <label for="status">Use this checkbox to change your status &nbsp;</label>
+  <%= check_box 'engeener', 'status' %></p>
+  <%= submit_tag "Save changes" %>
+  
+<% end -%>
 </div>
-

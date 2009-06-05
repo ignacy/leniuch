@@ -1,0 +1,1243 @@
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEngeeners (1)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "engeeners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "imie" varchar(255), "nzwisko" varchar(255), "email" varchar(255), "status" boolean DEFAULT 0) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateTasks (2)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tresc" varchar(255), "pdone" integer DEFAULT 0, "engeener" varchar(255)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to AddPasswords (3)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "engeeners" ADD "hashed_password" varchar(255)[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mALTER TABLE "engeeners" ADD "salt" varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to AddSessions (4)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255), "data" text, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to AddTaskTime (5)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "tasks" ADD "timetaken" datetime DEFAULT 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to ModifyTaskTime (6)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TEMPORARY TABLE "altered_tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tresc" varchar(255), "pdone" integer DEFAULT 0, "engeener" varchar(255), "timetaken" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tasks")[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDROP TABLE "tasks"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tresc" varchar(255), "pdone" integer DEFAULT 0, "engeener" varchar(255), "timetaken" integer(8) DEFAULT 0) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_tasks")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP TABLE "altered_tasks"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to AddDateToTasks (7)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "tasks" ADD "timeadded" date DEFAULT '2009-06-05'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("engeeners")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("tasks")[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (72.6ms)[0m   [0;1mCREATE TABLE "engeeners" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "imie" varchar(255), "nzwisko" varchar(255), "email" varchar(255), "status" boolean DEFAULT 'f', "hashed_password" varchar(255), "salt" varchar(255)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (4.2ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255), "data" text, "updated_at" datetime) [0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tresc" varchar(255), "pdone" integer DEFAULT 0, "engeener" varchar(255), "timetaken" integer(8) DEFAULT 0, "timeadded" date DEFAULT '2009-06-05') [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('7')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('2')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('3')[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('4')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('6')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('5')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+
+
+Processing LoginController#login (for 127.0.0.1 at 2009-06-05 19:27:38) [GET]
+Rendering template within layouts/gray
+Rendering login/login
+Completed in 34ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#add_engeener (for 127.0.0.1 at 2009-06-05 19:28:17) [GET]
+Rendering template within layouts/gray
+Rendering login/add_engeener
+Completed in 115ms (View: 89, DB: 0) | 200 OK [http://localhost/login/add_engeener]
+
+
+Processing LoginController#add_engeener (for 127.0.0.1 at 2009-06-05 19:28:33) [POST]
+  Parameters: {"engeener"=>{"imie"=>"Ignacy", "password_confirmation"=>"haselko", "nzwisko"=>"Moryc", "password"=>"haselko", "email"=>"imoryc@gmail.com"}, "commit"=>"Add Engeener", "authenticity_token"=>"wWmHxi00NwjbENObtqsVpg3rtuhn2wqWMbZjk87w9ww="}
+  [4;36;1mEngeener Exists (0.4ms)[0m   [0;1mSELECT "engeeners".id FROM "engeeners" WHERE ("engeeners"."nzwisko" = 'Moryc') LIMIT 1[0m
+  [4;35;1mEngeener Create (0.7ms)[0m   [0mINSERT INTO "engeeners" ("imie", "status", "salt", "hashed_password", "nzwisko", "email") VALUES('Ignacy', 'f', '-6098619680.42189488579017', '990322bb5e4fe641dd8b9552d8a2c5d96961c2bf', 'Moryc', 'imoryc@gmail.com')[0m
+Rendering template within layouts/gray
+Rendering login/add_engeener
+Completed in 77ms (View: 3, DB: 1) | 200 OK [http://localhost/login/add_engeener]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2009-06-05 19:28:38) [GET]
+Rendering template within layouts/gray
+Rendering login/login
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LoginController#login (for 127.0.0.1 at 2009-06-05 19:28:44) [POST]
+  Parameters: {"commit"=>"Login", "nzwisko"=>"Moryc", "authenticity_token"=>"wWmHxi00NwjbENObtqsVpg3rtuhn2wqWMbZjk87w9ww=", "password"=>"haselko"}
+  [4;36;1mEngeener Load (0.6ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."nzwisko" = 'Moryc') LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed in 46ms (DB: 1) | 302 Found [http://localhost/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-06-05 19:28:44) [GET]
+
+NoMethodError (undefined method `authorize' for #<LoginController:0xb72cfad0>):
+  
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LoginController#login (for 127.0.0.1 at 2009-06-05 19:29:33) [GET]
+Rendering template within layouts/gray
+Rendering login/login
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-05 19:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-06-05 19:29:51) [GET]
+
+NoMethodError (undefined method `authorize' for #<LoginController:0xb745bd04>):
+  
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-06-05 19:31:32) [GET]
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/login/index]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#login (for 127.0.0.1 at 2009-06-05 19:31:32) [GET]
+Rendering template within layouts/gray
+Rendering login/login
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#login (for 127.0.0.1 at 2009-06-05 19:31:37) [POST]
+  Parameters: {"commit"=>"Login", "nzwisko"=>"Moryc", "password"=>"haselko"}
+  [4;35;1mEngeener Load (0.5ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."nzwisko" = 'Moryc') LIMIT 1[0m
+Redirected to http://localhost:3000/login/index
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#index (for 127.0.0.1 at 2009-06-05 19:31:38) [GET]
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/gray
+Rendering login/index
+Completed in 28ms (View: 9, DB: 1) | 200 OK [http://localhost/login/index]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2009-06-05 19:31:40) [GET]
+Rendering template within layouts/gray
+Rendering status/home
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://localhost/status/home]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2009-06-05 19:31:42) [GET]
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" [0m
+Rendering template within layouts/gray
+Rendering status/list
+Completed in 30ms (View: 12, DB: 1) | 200 OK [http://localhost/status/list]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#user (for 127.0.0.1 at 2009-06-05 19:31:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEngeener Load (1.2ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+  [4;35;1mTask Load (0.3ms)[0m   [0mSELECT * FROM "tasks" WHERE (engeener = 'Moryc') [0m
+Rendering template within layouts/gray
+Rendering status/user
+Completed in 65ms (View: 9, DB: 2) | 200 OK [http://localhost/status/user/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:31:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.9ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0xb70f8734>) on line #8 of app/views/login/edit.rhtml:
+5: <br>
+6: This page allows you to change your current status.
+7: <br>
+8: <%= start_form_tag :controller => 'login', :action => 'update', :id => @engeener %>
+9: 
+10: <label for="status">Use this checkbox to change your status &nbsp;</label>
+11: 
+
+    app/views/login/edit.rhtml:8:in `_run_rhtml_app47views47login47edit46rhtml'
+
+Rendered rescues/_trace (58.3ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:32:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.9ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+ERROR: compiling _run_rhtml_app47views47login47edit46rhtml RAISED compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:15: syntax error, unexpected kEND
+@output_buffer.concat(( end ).to_s); @output_buffer.concat "\r\n"
+                           ^
+Function body:           def _run_rhtml_app47views47login47edit46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n"
+@output_buffer.concat "<div id=\"mainContainer\">\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "<h1>Edit engeener status</h1>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "This page allows you to change your current status.\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat(( form_tag :controller => 'login', :action => 'update', :id => @engeener ).to_s); @output_buffer.concat "\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat "<label for=\"status\">Use this checkbox to change your status &nbsp;</label>\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat(( check_box 'engeener', 'status' ).to_s); @output_buffer.concat "</p>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat(( submit_tag "Save changes" ).to_s); @output_buffer.concat "\r\n"
+@output_buffer.concat(( end ).to_s); @output_buffer.concat "\r\n"
+@output_buffer.concat "</div>\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ignacy/code/leniuch/app/views/login/edit.rhtml:21:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:15: syntax error, unexpected kEND
+@output_buffer.concat(( end ).to_s); @output_buffer.concat "\r\n"
+                           ^) on line #15 of app/views/login/edit.rhtml:
+12: <%= check_box 'engeener', 'status' %></p>
+13: <br>
+14: <%= submit_tag "Save changes" %>
+15: <%= end %>
+16: </div>
+17: 
+
+    app/views/login/edit.rhtml:21:in `compile!'
+
+Rendered rescues/_trace (124.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:32:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (1.3ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.9ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+ERROR: compiling _run_rhtml_app47views47login47edit46rhtml RAISED compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:19: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47login47edit46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n"
+@output_buffer.concat "<div id=\"mainContainer\">\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "<h1>Edit engeener status</h1>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "This page allows you to change your current status.\r\n"
+@output_buffer.concat "<br>\r\n"
+ form_tag :controller => 'login', :action => 'update', :id => @engeener ; @output_buffer.concat "\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat "<label for=\"status\">Use this checkbox to change your status &nbsp;</label>\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat(( check_box 'engeener', 'status' ).to_s); @output_buffer.concat "</p>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat(( submit_tag "Save changes" ).to_s); @output_buffer.concat "\r\n"
+ end ; @output_buffer.concat "\r\n"
+@output_buffer.concat "</div>\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ignacy/code/leniuch/app/views/login/edit.rhtml:19:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:19: syntax error, unexpected kENSURE, expecting $end) on line #19 of app/views/login/edit.rhtml:
+16: </div>
+17: 
+
+    app/views/login/edit.rhtml:19:in `compile!'
+
+Rendered rescues/_trace (56.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:34:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (1.0ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.8ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+ERROR: compiling _run_rhtml_app47views47login47edit46rhtml RAISED compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:17: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47login47edit46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n"
+@output_buffer.concat "<div id=\"mainContainer\">\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "<h1>Edit engeener status</h1>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "This page allows you to change your current status.\r\n"
+@output_buffer.concat "<br>\r\n"
+ form_tag :controller => 'login', :action => 'update', :id => @engeener ; @output_buffer.concat "\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat "  <label for=\"status\">Use this checkbox to change your status &nbsp;</label>\r\n"
+@output_buffer.concat "  "; @output_buffer.concat(( check_box 'engeener', 'status' ).to_s); @output_buffer.concat "</p>\r\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Save changes" ).to_s); @output_buffer.concat "\r\n"
+@output_buffer.concat "  \r\n"
+ end ; @output_buffer.concat "\r\n"
+@output_buffer.concat "</div>\r\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ignacy/code/leniuch/app/views/login/edit.rhtml:17:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:17: syntax error, unexpected kENSURE, expecting $end) on line #17 of app/views/login/edit.rhtml:
+14: <% end -%>
+15: </div>
+
+    app/views/login/edit.rhtml:17:in `compile!'
+
+Rendered rescues/_trace (56.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:35:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (1.1ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+ERROR: compiling _run_rhtml_app47views47login47edit46rhtml RAISED compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:8: syntax error, unexpected tASSOC, expecting '}'
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+                         ^
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:8: syntax error, unexpected ',', expecting '}'
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+                                  ^
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:8: syntax error, unexpected ',', expecting kEND
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+                                                        ^
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:17: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47login47edit46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n"
+@output_buffer.concat "<div id=\"mainContainer\">\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "<h1>Edit engeener status</h1>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "This page allows you to change your current status.\r\n"
+@output_buffer.concat "<br>\r\n"
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat "  <label for=\"status\">Use this checkbox to change your status &nbsp;</label>\r\n"
+@output_buffer.concat "  "; @output_buffer.concat(( check_box 'engeener', 'status' ).to_s); @output_buffer.concat "</p>\r\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Save changes" ).to_s); @output_buffer.concat "\r\n"
+@output_buffer.concat "  \r\n"
+ end ; @output_buffer.concat "\r\n"
+@output_buffer.concat "</div>\r\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ignacy/code/leniuch/app/views/login/edit.rhtml:17:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:8: syntax error, unexpected tASSOC, expecting '}'
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+                         ^
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:8: syntax error, unexpected ',', expecting '}'
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+                                  ^
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:8: syntax error, unexpected ',', expecting kEND
+ form_tag {:controller => 'login', :action => 'update'}, :id => @engeener ; @output_buffer.concat "\r\n"
+                                                        ^
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:17: syntax error, unexpected kENSURE, expecting $end) on line #8 of app/views/login/edit.rhtml:
+5: <br>
+6: This page allows you to change your current status.
+7: <br>
+8: <% form_tag {:controller => 'login', :action => 'update'}, :id => @engeener -%>
+9: 
+10:   <label for="status">Use this checkbox to change your status &nbsp;</label>
+11:   <%= check_box 'engeener', 'status' %></p>
+
+    app/views/login/edit.rhtml:17:in `compile!'
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:35:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.5ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+ERROR: compiling _run_rhtml_app47views47login47edit46rhtml RAISED compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:17: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47login47edit46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\r\n"
+@output_buffer.concat "<div id=\"mainContainer\">\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "<h1>Edit engeener status</h1>\r\n"
+@output_buffer.concat "<br>\r\n"
+@output_buffer.concat "This page allows you to change your current status.\r\n"
+@output_buffer.concat "<br>\r\n"
+ form_tag :controller => 'login', :action => 'update', :id => @engeener ; @output_buffer.concat "\r\n"
+@output_buffer.concat "\r\n"
+@output_buffer.concat "  <label for=\"status\">Use this checkbox to change your status &nbsp;</label>\r\n"
+@output_buffer.concat "  "; @output_buffer.concat(( check_box 'engeener', 'status' ).to_s); @output_buffer.concat "</p>\r\n"
+@output_buffer.concat "  "; @output_buffer.concat(( submit_tag "Save changes" ).to_s); @output_buffer.concat "\r\n"
+@output_buffer.concat "  \r\n"
+ end ; @output_buffer.concat "\r\n"
+@output_buffer.concat "</div>\r\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ignacy/code/leniuch/app/views/login/edit.rhtml:17:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ignacy/code/leniuch/app/views/login/edit.rhtml:17: syntax error, unexpected kENSURE, expecting $end) on line #17 of app/views/login/edit.rhtml:
+14: <% end -%>
+15: </div>
+
+    app/views/login/edit.rhtml:17:in `compile!'
+
+Rendered rescues/_trace (56.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:37:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.6ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://localhost/login/edit/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#update (for 127.0.0.1 at 2009-06-05 19:37:04) [POST]
+  Parameters: {"engeener"=>{"status"=>"1"}, "commit"=>"Save changes", "id"=>"1"}
+  [4;36;1mEngeener Load (1.0ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (1.2ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+  [4;36;1mEngeener Exists (1.0ms)[0m   [0;1mSELECT "engeeners".id FROM "engeeners" WHERE ("engeeners"."nzwisko" = 'Moryc' AND "engeeners".id <> 1) LIMIT 1[0m
+  [4;35;1mEngeener Update (1.1ms)[0m   [0mUPDATE "engeeners" SET "status" = 't' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/status/list/1
+Completed in 54ms (DB: 4) | 302 Found [http://localhost/login/update/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2009-06-05 19:37:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" [0m
+Rendering template within layouts/gray
+Rendering status/list
+Completed in 20ms (View: 4, DB: 1) | 200 OK [http://localhost/status/list/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2009-06-05 19:37:07) [GET]
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" [0m
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/gray
+Rendering status/report
+Completed in 55ms (View: 34, DB: 1) | 200 OK [http://localhost/status/report]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2009-06-05 19:37:12) [GET]
+Rendering template within layouts/gray
+Rendering status/home
+Completed in 22ms (View: 16, DB: 0) | 200 OK [http://localhost/status/home]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2009-06-05 19:37:14) [GET]
+  [4;35;1mEngeener Load (0.9ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (1.2ms)[0m   [0;1mSELECT * FROM "engeeners" [0m
+  [4;35;1mTask Load (0.4ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/gray
+Rendering status/report
+Completed in 50ms (View: 7, DB: 3) | 200 OK [http://localhost/status/report]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2009-06-05 19:37:16) [GET]
+Rendering template within layouts/gray
+Rendering status/home
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/status/home]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2009-06-05 19:37:18) [GET]
+  [4;36;1mEngeener Load (0.8ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (1.1ms)[0m   [0mSELECT * FROM "engeeners" [0m
+Rendering template within layouts/gray
+Rendering status/list
+Completed in 41ms (View: 8, DB: 2) | 200 OK [http://localhost/status/list]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#user (for 127.0.0.1 at 2009-06-05 19:37:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.6ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.7ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+  [4;36;1mTask Load (0.3ms)[0m   [0;1mSELECT * FROM "tasks" WHERE (engeener = 'Moryc') [0m
+Rendering template within layouts/gray
+Rendering status/user
+Completed in 34ms (View: 3, DB: 2) | 200 OK [http://localhost/status/user/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#new (for 127.0.0.1 at 2009-06-05 19:37:23) [GET]
+  Parameters: {"engeener"=>"Moryc"}
+Rendering template within layouts/gray
+Rendering task/new
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0xb70ef990>) on line #2 of app/views/task/new.rhtml:
+1: <h1>Add new task</h1>
+2: <%= start_form_tag :action => 'create' %>
+3: <p><label for="task_tresc">Task</label>:
+4: <%= text_field 'task', 'tresc' %></p>
+5: <p><label for="task_timetaken">Time taken</label>:
+
+    app/views/task/new.rhtml:2:in `_run_rhtml_app47views47task47new46rhtml'
+
+Rendered rescues/_trace (58.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#new (for 127.0.0.1 at 2009-06-05 19:38:37) [GET]
+  Parameters: {"engeener"=>"Moryc"}
+Rendering template within layouts/gray
+Rendering task/new
+Completed in 51ms (View: 24, DB: 0) | 200 OK [http://localhost/task/new?engeener=Moryc]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#create (for 127.0.0.1 at 2009-06-05 19:38:46) [POST]
+  Parameters: {"commit"=>"Create", "task"=>{"engeener"=>"Moryc", "timeadded"=>"2009-06-05", "timetaken"=>"2", "tresc"=>"cccc", "pdone"=>"60"}}
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" WHERE (nzwisko = 'Moryc') LIMIT 1[0m
+  [4;36;1mTask Create (0.5ms)[0m   [0;1mINSERT INTO "tasks" ("engeener", "timeadded", "timetaken", "tresc", "pdone") VALUES('Moryc', '2009-06-05', 2, 'cccc', 60)[0m
+Redirected to http://localhost:3000/status/list/1
+Completed in 52ms (DB: 1) | 302 Found [http://localhost/task/create]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2009-06-05 19:38:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEngeener Load (0.5ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.4ms)[0m   [0;1mSELECT * FROM "engeeners" [0m
+Rendering template within layouts/gray
+Rendering status/list
+Completed in 20ms (View: 4, DB: 1) | 200 OK [http://localhost/status/list/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#user (for 127.0.0.1 at 2009-06-05 19:38:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEngeener Load (0.9ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+  [4;35;1mTask Load (0.8ms)[0m   [0mSELECT * FROM "tasks" WHERE (engeener = 'Moryc') [0m
+Rendering template within layouts/gray
+Rendering status/user
+Completed in 49ms (View: 7, DB: 3) | 200 OK [http://localhost/status/user/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2009-06-05 19:38:56) [GET]
+  [4;36;1mEngeener Load (0.6ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.5ms)[0m   [0mSELECT * FROM "engeeners" [0m
+Rendering template within layouts/gray
+Rendering status/list
+Completed in 27ms (View: 5, DB: 1) | 200 OK [http://localhost/status/list]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2009-06-05 19:38:58) [GET]
+  [4;36;1mEngeener Load (0.6ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" [0m
+  [4;36;1mTask Load (0.5ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/gray
+Rendering status/report
+Completed in 29ms (View: 7, DB: 2) | 200 OK [http://localhost/status/report]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#edit (for 127.0.0.1 at 2009-06-05 19:39:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (2.7ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering task/edit
+
+ActionView::TemplateError (undefined method `start_form_tag' for #<ActionView::Base:0xb7373c48>) on line #2 of app/views/task/edit.rhtml:
+1: <h1>Edit tasks detail</h1>
+2: <%= start_form_tag :action => 'update', :id => @task %>
+3: <p><label for="task_tresc">Task</label>:
+4: <%= text_field 'task', 'tresc' %></p>
+5: <p><label for="task_timetaken">Time taken</label>:
+
+    app/views/task/edit.rhtml:2:in `_run_rhtml_app47views47task47edit46rhtml'
+
+Rendered rescues/_trace (56.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#edit (for 127.0.0.1 at 2009-06-05 19:39:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTask Load (0.9ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering task/edit
+ERROR: compiling _run_rhtml_app47views47task47edit46rhtml RAISED compile error
+/home/ignacy/code/leniuch/app/views/task/edit.rhtml:14: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_rhtml_app47views47task47edit46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Edit tasks detail</h1>\n"
+ form_tag :action => 'update', :id => @task 
+@output_buffer.concat "<p><label for=\"task_tresc\">Task</label>:\n"
+@output_buffer.concat(( text_field 'task', 'tresc' ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "<p><label for=\"task_timetaken\">Time taken</label>:\n"
+@output_buffer.concat(( text_field 'task', 'timetaken' ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "<p><label for=\"task_pdone\"> Prec. done</label>:\n"
+@output_buffer.concat(( text_field 'task', 'pdone' ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "<input type=\"hidden\" id=\"task_engeener\" name=\"task[engeener]\" value=\""; @output_buffer.concat((params[:engeener] ).to_s); @output_buffer.concat "\" />\n"
+@output_buffer.concat(( submit_tag "Save changes" ).to_s); @output_buffer.concat "\n"
+ end 
+@output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ignacy/code/leniuch/app/views/task/edit.rhtml:14:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ignacy/code/leniuch/app/views/task/edit.rhtml:14: syntax error, unexpected kENSURE, expecting $end) on line #14 of app/views/task/edit.rhtml:
+11: <% end -%>
+
+    app/views/task/edit.rhtml:14:in `compile!'
+
+Rendered rescues/_trace (56.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#edit (for 127.0.0.1 at 2009-06-05 19:40:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTask Load (1.1ms)[0m   [0mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering task/edit
+Completed in 40ms (View: 18, DB: 1) | 200 OK [http://localhost/task/edit/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing TaskController#update (for 127.0.0.1 at 2009-06-05 19:40:04) [POST]
+  Parameters: {"commit"=>"Save changes", "id"=>"1", "task"=>{"engeener"=>"", "timetaken"=>"2", "tresc"=>"cccc", "pdone"=>"60"}}
+  [4;36;1mTask Load (0.6ms)[0m   [0;1mSELECT * FROM "tasks" WHERE ("tasks"."id" = 1) [0m
+  [4;35;1mTask Update (0.4ms)[0m   [0mUPDATE "tasks" SET "engeener" = '' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/status/list/1
+Completed in 49ms (DB: 1) | 302 Found [http://localhost/task/update/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#list (for 127.0.0.1 at 2009-06-05 19:40:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEngeener Load (0.5ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (0.5ms)[0m   [0mSELECT * FROM "engeeners" [0m
+Rendering template within layouts/gray
+Rendering status/list
+Completed in 19ms (View: 4, DB: 1) | 200 OK [http://localhost/status/list/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2009-06-05 19:40:05) [GET]
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (1.1ms)[0m   [0mSELECT * FROM "engeeners" [0m
+  [4;36;1mTask Load (0.8ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Rendering template within layouts/gray
+Rendering status/report
+Completed in 58ms (View: 12, DB: 3) | 200 OK [http://localhost/status/report]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2009-06-05 19:40:08) [GET]
+Rendering template within layouts/gray
+Rendering status/home
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/status/home]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#report (for 127.0.0.1 at 2009-06-05 19:40:11) [GET]
+  [4;35;1mEngeener Load (0.6ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.6ms)[0m   [0;1mSELECT * FROM "engeeners" [0m
+  [4;35;1mTask Load (0.5ms)[0m   [0mSELECT * FROM "tasks" [0m
+Rendering template within layouts/gray
+Rendering status/report
+Completed in 130ms (View: 8, DB: 2) | 200 OK [http://localhost/status/report]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#export_toCSV (for 127.0.0.1 at 2009-06-05 19:40:12) [GET]
+  [4;36;1mEngeener Load (4.6ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;35;1mEngeener Load (6.4ms)[0m   [0mSELECT * FROM "engeeners" [0m
+  [4;36;1mTask Load (1.1ms)[0m   [0;1mSELECT * FROM "tasks" [0m
+Completed in 81ms (View: 2, DB: 12) | 200 OK [http://localhost/status/export_toCSV]
+Streaming file public/reports/dailystatus.csv
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#edit (for 127.0.0.1 at 2009-06-05 19:40:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEngeener Load (0.9ms)[0m   [0mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) LIMIT 1[0m
+  [4;36;1mEngeener Load (0.9ms)[0m   [0;1mSELECT * FROM "engeeners" WHERE ("engeeners"."id" = 1) [0m
+Rendering template within layouts/gray
+Rendering login/edit
+Completed in 49ms (View: 10, DB: 2) | 200 OK [http://localhost/login/edit/1]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing StatusController#home (for 127.0.0.1 at 2009-06-05 19:40:27) [GET]
+Rendering template within layouts/gray
+Rendering status/home
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/status/home]
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/ignacy/code/leniuch/app/controllers/application_controller.rb:4)
+
+
+Processing LoginController#add_engeener (for 127.0.0.1 at 2009-06-05 19:40:30) [GET]
+Rendering template within layouts/gray
+Rendering login/add_engeener
+Completed in 46ms (View: 20, DB: 0) | 200 OK [http://localhost/login/add_engeener]

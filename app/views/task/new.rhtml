@@ -1,5 +1,5 @@
 <h1>Add new task</h1>
-<%= start_form_tag :action => 'create' %>
+<% form_tag :action => 'create' do -%>
 <p><label for="task_tresc">Task</label>:
 <%= text_field 'task', 'tresc' %></p>
 <p><label for="task_timetaken">Time taken</label>:
@@ -10,5 +10,5 @@
 <input type="hidden" id="date" name="task[timeadded]" value="<%=Time.now.to_date -%>" />
 <br/>
 <%= submit_tag "Create" %>
-<%= end_form_tag %>
+<% end -%>
 
